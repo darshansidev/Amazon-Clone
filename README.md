@@ -1,2 +1,5 @@
 # Amazon-Clone
-change from local
+
+--Amazon Clone For Design Purpose
+
+
