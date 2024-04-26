@@ -62,8 +62,9 @@ body {
     left: 330px;
     position: absolute;
     font-size: 30px;
-    display: none;
+    display: block;
     color: #DDD;
+    z-index: 101;
 }
 
 .fa-angle.right {
@@ -100,10 +101,10 @@ body {
     transform: translateX(0);
 }
 
-.fa-xmark.active {
+/* .fa-xmark.active {
     display: block;
-    z-index: 101;
-}
+    
+} */
 
 .hdn-sign.active {
     display: block;
