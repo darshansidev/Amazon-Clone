@@ -15,10 +15,10 @@
 <body>
     <!-- Slider  -->
     <!-- sildebar pointer -->
-    <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+    <!-- <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
         aria-controls="offcanvasExample">
         Link with href
-    </a>
+    </a> -->
 
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header slidbar-head">
@@ -113,78 +113,95 @@
     </div>
     <!-- navbar -->
     <header>
-        <div class="nav-logo ">
-            <a href=""><img class="" src="./images/logo.png" width="100" alt=""></a>
-        </div>
-        <div class="navigate ">
-            <div class="location">
-                <i id="location" class="fa-solid fa-location-dot"></i>
-                <div class="location-home ">
-                    <p>Delivering to surat 395010</p>
-                    <span>Update location</span>
+        <nav>
+            <div class="nav-left">
+                <div class="nav-logo">
+                    <img src="./images/logo.png">
+                </div>
+
+                <div class="location p-0">
+                    <p class="top-text  pt-3 p-0  m-0">Delivering to surat 395010</p>
+                    <div class="location-icon d-flex justify-content-center">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="bottom-text">Update location</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="nav-search ">
-            <select class="search-select">
-                <option>All</option>
-            </select>
-            <input type="text" placeholder="search amazon" class="search-input">
-            <div class="nav-search-logo">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-        </div>
-        <div class="nav-lang ">
-            <div class="flage">
-                <img src="./images/India-Flag.webp" width="20px">
-            </div>
-            <select class="span-en">
-                <option value="lan">EN</option>
-                <option value="lan">ES</option>
-                <option value="lan">AR</option>
-            </select>
-            <!-- <span class="span-en">EN</span> -->
-            <!-- <select class="span-en">
-                <option value="english">EN</option>
-                <option value="Hindi">HI</option>
-                <option value="Tamil">TA</option>
-                <option value="marathi">MA</option>
-            </select> -->
-            <!-- <img src="./images/India-Flag.webp" alt="" width="8px"> -->
-            <!-- Hover languageShow   -->
-            <div class="language-option">
-                <div class="flag">
-                    <i class="fa-regular fa-flag"></i>
-                </div>
-                <select class="select-language">
-                    <option value="lan">EN</option>
-                    <option value="lan">ES</option>
-                    <option value="lan">AR</option>
+
+            <div class="nav-center">
+                <select class="search-dropdown">
+                    <option>All</option>
+                    <option>All Departments</option>
+                    <option>Arts & Crafts</option>
                 </select>
+                <input type="text" placeholder="Search Amazon" class="search-box">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #28416c;">
+                    </i>
+                </div>
             </div>
-            <div class="language-image">
-                <!-- <img src="https://img.freepik.com/free-vector/illustration-india-flag_53876-27130.jpg"> -->
+
+            <div class="nav-right">
+                <div class="language-option">
+                    <div class="flag">
+                        <i class="fa-regular fa-flag"></i>
+                    </div>
+                    <select class="select-language">
+                        <option value="lan">EN</option>
+                        <option value="lan">ES</option>
+                        <option value="lan">AR</option>
+                    </select>
+                </div>
+
+                <div class="account-option">
+                    <p class="top-text">
+                        Hello, sign in
+                    </p>
+                    <select class="select-account">
+                        <option value="Account">
+                            Account & Lists
+                        </option>
+                        <option value="Account">
+                            Account & Lists
+                        </option>
+                        <option value="Account">
+                            Account & Lists
+                        </option>
+                    </select>
+                </div>
+
+                <div class="order-option">
+                    <p class="top-text">
+                        Returns
+                    </p>
+                    <p class="bottom-text">
+                        & Orders
+                    </p>
+                </div>
+
+                <div class="cart-option">
+                    <div class="cart-logo">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    Cart
+                </div>
             </div>
-            <div class="select-lang">EN</div>
-        </div>
+        </nav>
 
-        </div>
-        <div class="accounts-lists ">
-            <p>Hello,sign in</p>
-            <h2>Accounts&lists <img src="./assets/dropdown_icon.png" alt="" width="8px"></h2>
-        </div>
-        <div class="accounts-lists ">
-            <p>Returns</p>
-            <h2>& orders</h2>
-        </div>
-        <div class="nav-cart ">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <p>cart</p>
-        </div>
+        <div class="nav-options">
+            <div class="all-logo">
+                <i class="fa-solid fa-bars"></i>
+                <p class="list">All</p>
+            </div>
 
-
-
-
+            <div class="options">
+                <p>Today's Deals</p>
+                <p>Customer Service</p>
+                <p>Registry</p>
+                <p>Gift Cards</p>
+                <p> Sell</p>
+            </div>
+        </div>
     </header>
 
 
