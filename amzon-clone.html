@@ -10,15 +10,16 @@
     <script src="https://kit.fontawesome.com/d83f8b50ac.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./mediaQuery.css">
+    <script src="./script.js"></script>
 </head>
 
 <body>
     <!-- Slider  -->
-    <!-- sildebar pointer -->
-    <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+    <!-- slidebar pointer -->
+    <!-- <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
         aria-controls="offcanvasExample">
         Link with href
-    </a>
+    </a> -->
 
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header slidbar-head">
@@ -113,10 +114,10 @@
     </div>
     <!-- navbar -->
     <header>
-        <div class="nav-logo ">
-            <a href=""><img class="" src="./images/logo.png" width="100" alt=""></a>
+        <div class="nav-logo  ">
+            <a href=""><img class="" src="./images/logo.png" width="100" alt="" class="border-0"></a>
         </div>
-        <div class="navigate ">
+        <div class="navigate  ">
             <div class="location">
                 <i id="location" class="fa-solid fa-location-dot"></i>
                 <div class="location-home ">
@@ -134,58 +135,128 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
         </div>
-        <div class="nav-lang ">
+        <div class="nav-lang">
             <div class="flage">
                 <img src="./images/India-Flag.webp" width="20px">
             </div>
-            <select class="span-en">
-                <option value="lan">EN</option>
-                <option value="lan">ES</option>
-                <option value="lan">AR</option>
-            </select>
-            <!-- <span class="span-en">EN</span> -->
-            <!-- <select class="span-en">
-                <option value="english">EN</option>
-                <option value="Hindi">HI</option>
-                <option value="Tamil">TA</option>
-                <option value="marathi">MA</option>
-            </select> -->
-            <!-- <img src="./images/India-Flag.webp" alt="" width="8px"> -->
-            <!-- Hover languageShow   -->
-            <div class="language-option">
-                <div class="flag">
-                    <i class="fa-regular fa-flag"></i>
+            <!-- Hidden Hover Div -->
+            <span class="span-en px-2">EN <i class="fa-solid fa-angle-down" style="color: #ffffff;"></i></span>
+            <div class="language-select-container py-4">
+                <div class="language-select-option py-2 language-select-text">
+                    <input type="radio" name="EN" id="" value="EN" checked> <span>English-EN</span>
                 </div>
-                <select class="select-language">
-                    <option value="lan">EN</option>
-                    <option value="lan">ES</option>
-                    <option value="lan">AR</option>
-                </select>
+                <hr class="m-0 mx-3 my-2" />
+                <div class="language-select-option language-select-text">
+                    <input type="radio" name="EN" id="" value="HI"> <span>हिन्दी - HI</span>
+                </div>
+                <div class="language-select-option language-select-text">
+                    <input type="radio" name="EN" id="" value="TA"> <span>தமிழ் - TA</span>
+                </div>
+                <div class="language-select-option language-select-text">
+                    <input type="radio" name="EN" id="" value="TE"> <span>తెలుగు - TE</span>
+                </div>
+                <div class="language-select-option language-select-text">
+                    <input type="radio" name="EN" id="" value="KN"> <span>ಕನ್ನಡ - KN</span>
+                </div>
+                <div class="language-select-option language-select-text">
+                    <input type="radio" name="EN" id="" value="ML"> <span>മലയാളം - ML</span>
+                </div>
+                <div class="language-select-option language-select-text">
+                    <input type="radio" name="EN" id="" value="BN"> <span>বাংলা - BN</span>
+                </div>
+                <div class="language-select-option language-select-text">
+                    <input type="radio" name="EN" id="" value="MR"> <span>मराठी - MR</span>
+                </div>
+                <div class="container mx-4 language-select-text">
+                    <a href="#"> Learn More</a>
+                </div>
+                <hr class="m-0 mx-3 my-2" />
+                <div class="container d-flex">
+                    <div class="flage language-select-text">
+                        <img src="./images/India-Flag.webp" width="20px"><span> You Are Shopping On
+                            Amazon.in</span>
+                    </div>
+                </div>
+                <a href="#" class="mx-3 language-select-text"> Change country / region</a>
             </div>
-            <div class="language-image">
-                <!-- <img src="https://img.freepik.com/free-vector/illustration-india-flag_53876-27130.jpg"> -->
+        </div>
+        </div>
+        <div class="account-section">
+            <div class="accounts-lists ">
+                <p>Hello,sign in</p>
+                <h2>Accounts&lists <img src="./assets/dropdown_icon.png" alt="" width="8px"></h2>
             </div>
-            <div class="select-lang">EN</div>
-        </div>
-
-        </div>
-        <div class="accounts-lists ">
-            <p>Hello,sign in</p>
-            <h2>Accounts&lists <img src="./assets/dropdown_icon.png" alt="" width="8px"></h2>
+            <!-- hidden account div -->
+            <div class="account-info-container">
+                <div class="container d-flex justify-content-center">
+                    <button class="account-signin-btn my-3 py-1"><a href="#" class="text-black ">Sign in</a></button>
+                </div>
+                <div class="container d-flex justify-content-center ">
+                    <span class="account-info-header-text">New Customer?<a href="#">Start here.</a></span>
+                </div>
+                <hr class="mx-4 ">
+                <div class="row">
+                    <div class="col-5">
+                        <ul class="list-group ">
+                            <li class="list-group-item border-0 py-0 account-info-body-text "><b>Your Lists</b></li>
+                            <li class="list-group-item border-0 py-0"><span
+                                    class="fw-lighter account-info-body-text">Create
+                                    Youre Wish Lists</span>
+                            </li>
+                            <li class="list-group-item border-0 py-0"><span
+                                    class="fw-lighter account-info-body-text">Create
+                                    Youre Wish Lists</span>
+                            </li>
+                            <li class="list-group-item border-0 py-0"><span
+                                    class="fw-lighter account-info-body-text">Create
+                                    Youre Wish Lists</span>
+                            </li>
+                            <li class="list-group-item border-0 py-0"><span
+                                    class="fw-lighter account-info-body-text">Create
+                                    Youre Wish Lists</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class=" col-1 d-flex" style="height: auto;">
+                        <div class="vr"></div>
+                    </div>
+                    <div class="col-5">
+                        <ul class="list-group ">
+                            <li class="list-group-item border-0 py-0 account-info-body-text"><b>Your Acoount</b></li>
+                            <li class="list-group-item border-0 py-0"><span
+                                    class="fw-lighter account-info-body-text">Create
+                                    Your Account</span>
+                            </li>
+                            <li class="list-group-item border-0 py-0"><span
+                                    class="fw-lighter account-info-body-text">Create
+                                    Youre Wish Lists</span>
+                            </li>
+                            <li class="list-group-item border-0 py-0"><span
+                                    class="fw-lighter account-info-body-text">Create
+                                    Youre Wish Lists</span>
+                            </li>
+                            <li class="list-group-item border-0 py-0"><span
+                                    class="fw-lighter account-info-body-text">Create
+                                    Youre Wish Lists</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="accounts-lists ">
             <p>Returns</p>
             <h2>& orders</h2>
         </div>
-        <div class="nav-cart ">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <p>cart</p>
+        <div class="cart-section">
+            <div class="nav-cart ">
+                <i class="fa-solid fa-cart-shopping border-0"></i>
+                <p class="border-0">cart</p>
+            </div>
         </div>
-
-
-
-
     </header>
+
+    <!-- Hidden Hover Divs -->
 
 
 

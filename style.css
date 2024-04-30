@@ -8,7 +8,6 @@ body {
     font-family: "Amazon Ember", Arial, sans-serif;
     background: #E3E6E6;
     margin: 0;
-
 }
 
 
@@ -41,13 +40,6 @@ body {
     font-weight: 100;
 }
 
-/* ---------------------------navbar--------------------------*/
-.navigate {
-    align-items: center;
-    justify-content: center;
-    text-wrap: nowrap;
-}
-
 header {
     display: flex;
     justify-content: space-evenly;
@@ -58,20 +50,39 @@ header {
     color: aliceblue;
 }
 
+/* ---------------------------navbar--------------------------*/
+
+.nav-logo:hover {
+    border: 1px solid #ffffff;
+    padding: 0.3rem !important;
+}
+
+/* -----------------------location--------------------------- */
+.navigate {
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+    border: none;
+}
+
+
 .location {
     display: flex;
     align-items: end;
     margin-left: 10px;
+    border: none;
 }
 
 #location {
     font-size: 0.9rem;
     line-height: 1.3rem;
     padding-right: 3px;
+    border: none;
 }
 
 .location-home {
     margin-left: 2px;
+    border: none;
 }
 
 .location-home p {
@@ -79,30 +90,39 @@ header {
     color: #cccccc;
     margin-bottom: 3px !important;
     margin-left: -20px;
+    border: none;
 }
 
 .location-home span {
     font-size: 0.95rem;
     font-weight: bolder;
+    border: none;
 }
 
+.navigate:hover {
+    border: 1px solid #ffffff;
+    padding: 0.3rem !important;
+}
+
+/* --------------------------------search--------------------------- */
 .nav-search {
     display: flex;
     height: 40px;
     width: 620px;
-    background-color: pink;
+    background-color: rgb(247, 247, 247);
     border: none;
     border-radius: 5px;
 }
 
-.nav-search:hover {
-    border: 2px solid orange;
+.nav-search:active {
+    border: 1px solid #ffffff;
+    padding: 0.3rem !important;
 }
 
 .search-select {
     background-color: #F3F3F3;
     text-align: center;
-    width: 45px;
+    width: 70px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border: none;
@@ -124,11 +144,57 @@ header {
     color: #0F1111;
 }
 
+/* -------------------language-------------------------------------- */
 .nav-lang {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     margin-left: 10px;
+    padding: 0.5rem;
+}
+
+.language-select-container {
+    position: absolute;
+    top: 100%;
+    height: auto;
+    color: #0F1111 !important;
+    width: 250px;
+    background-color: #ffffff !important;
+    border-radius: 1%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: translateY(200px);
+}
+
+.nav-lang:hover {
+    border: 1px solid #ffffff;
+    padding: 0.3rem !important;
+}
+
+.nav-lang:hover .language-select-container {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0px);
+}
+
+
+
+.language-select-option {
+    padding: 0 20px;
+    padding-bottom: 10px;
+    accent-color: rgb(235, 173, 60);
+
+}
+
+.language-select-text {
+    font-size: clamp(7px, 2vh, 13px);
+}
+
+/* ------------------------------account---------------------------------- */
+.account-section {
+    position: relative;
 }
 
 .accounts-lists {
@@ -148,26 +214,76 @@ header {
     font-weight: bolder;
 }
 
+.account-info-container {
+    position: absolute;
+    top: 100%;
+    right: 3%;
+    height: auto;
+    color: #0F1111 !important;
+    width: 400px;
+    background-color: #ffffff !important;
+    border-radius: 2%;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: translateY(200px);
+
+}
+
+.account-signin-btn {
+    width: 40%;
+    border: none;
+    border-radius: 7px;
+    background-color: #f3d266;
+    font-size: clamp(8px, 2vw, 16px);
+}
+
+.account-info-header-text {
+    font-size: clamp(6px, 2vw, 12px);
+}
+
+.account-info-body-text {
+    font-size: clamp(6px, 2vw, 12px);
+    text-wrap: nowrap;
+    line-height: 0.8rem;
+}
+
+.accounts-lists:hover {
+    border: 1px solid #ffffff;
+    padding: 0.2rem !important;
+}
+
+.account-section:hover .account-info-container {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0px);
+}
+
+/* -----------------------cart --------------------- */
 .nav-cart {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 10px;
+    border: none;
 }
 
 .nav-cart i {
     font-size: 1rem;
     line-height: 1.3rem;
     padding-right: 3px;
+    border: none;
 }
 
 .nav-cart p {
     font-size: 0.9rem;
     line-height: 1.3rem;
     margin-bottom: 0;
+    border: none;
 }
 
-/* language hover  */
-.language-container {
-    margin-top: 10% !important;
+.cart-section :hover {
+    border: 1px solid #ffffff;
+    padding: 0.2rem !important;
 }
