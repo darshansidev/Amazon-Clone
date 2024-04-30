@@ -168,10 +168,6 @@ header {
 }
 
 /* language hover  */
-.language-div {
-    border-width: 5px;
-    width: 10%;
-    height: 30px;
-    margin-top: 5%;
-    position: absolute;
+.language-container {
+    margin-top: 10% !important;
 }
