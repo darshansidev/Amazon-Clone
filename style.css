@@ -352,3 +352,37 @@ header {
     border: 1px solid white;
     padding: 0.5rem;
 }
+
+/* ------------------------carousales----------------------- */
+.main-carosual {
+    position: relative;
+}
+
+.carousel-control-prev {
+    line-height: 1.2rem;
+
+}
+
+.carousel-control-next {
+    line-height: 1.2rem;
+}
+
+.carousel-item img {
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    z-index: 3;
+}
+
+.carousel-control-prev:active {
+    border: 3px solid white;
+}
+
+.carousel-control-next:active {
+    border: 3px solid white;
+}
+
+
+/* ----------------------grid images -------------------------- */
+.grid-image-container {
+    position: absolute;
+    margin-top: -220px;
+}
