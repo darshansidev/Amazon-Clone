@@ -10,16 +10,11 @@
     <script src="https://kit.fontawesome.com/d83f8b50ac.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./mediaQuery.css">
+    <script src="./script.js"></script>
 </head>
 
 <body>
-    <!-- Slider  -->
-    <!-- sildebar pointer -->
-    <!-- <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-        aria-controls="offcanvasExample">
-        Link with href
-    </a> -->
-
+    <!-- Off canvas  -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header slidbar-head">
             <h5 class="offcanvas-title" id="offcanvasExampleLabel"><i class="fa-regular fa-user"></i>&nbsp; Hello, Sign
@@ -125,6 +120,15 @@
                         <i class="fa-solid fa-location-dot"></i>
                         <p class="bottom-text">Update location</p>
                     </div>
+        <div class="nav-logo  ">
+            <a href=""><img class="" src="./images/logo.png" width="100" alt="" class="border-0"></a>
+        </div>
+        <div class="navigate  mx-md-3">
+            <div class="location">
+                <i id="location" class="fa-solid fa-location-dot"></i>
+                <div class="location-home ">
+                    <p>Delivering to surat 395010</p>
+                    <span>Update location</span>
                 </div>
             </div>
 
@@ -139,6 +143,19 @@
                     <i class="fa-solid fa-magnifying-glass" style="color: #28416c;">
                     </i>
                 </div>
+        </div>
+        <div class="nav-search ">
+            <select class="search-select">
+                <option>All</option>
+            </select>
+            <input type="text" placeholder="search amazon" class="search-input">
+            <div class="nav-search-logo">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="nav-lang">
+            <div class="flage">
+                <img src="./images/India-Flag.webp" width="20px">
             </div>
 
             <div class="nav-right">
@@ -185,26 +202,260 @@
                     </div>
                     Cart
                 </div>
+            <!-- Hidden Hover Div -->
+            <span class="span-en px-2">EN <i class="fa-solid fa-angle-down" style="color: #ffffff;"></i></span>
+            <div class="language-select-container py-4">
+                <div class="language-select-option py-2 language-select-text">
+                    <input type="radio" name="EN" id="" value="EN" checked> <span>English-EN</span>
+                </div>
+                <hr class="m-0 mx-3 my-2" />
+                <div class="language-select-option language-select-text">
+                    <input type="radio" name="EN" id="" value="HI"> <span>हिन्दी - HI</span>
+                </div>
+                <div class="language-select-option language-select-text">
+                    <input type="radio" name="EN" id="" value="TA"> <span>தமிழ் - TA</span>
+                </div>
+                <div class="language-select-option language-select-text">
+                    <input type="radio" name="EN" id="" value="TE"> <span>తెలుగు - TE</span>
+                </div>
+                <div class="language-select-option language-select-text">
+                    <input type="radio" name="EN" id="" value="KN"> <span>ಕನ್ನಡ - KN</span>
+                </div>
+                <div class="language-select-option language-select-text">
+                    <input type="radio" name="EN" id="" value="ML"> <span>മലയാളം - ML</span>
+                </div>
+                <div class="language-select-option language-select-text">
+                    <input type="radio" name="EN" id="" value="BN"> <span>বাংলা - BN</span>
+                </div>
+                <div class="language-select-option language-select-text">
+                    <input type="radio" name="EN" id="" value="MR"> <span>मराठी - MR</span>
+                </div>
+                <div class="container mx-4 language-select-text">
+                    <a href="#"> Learn More</a>
+                </div>
+                <hr class="m-0 mx-3 my-2" />
+                <div class="container d-flex">
+                    <div class="flage language-select-text">
+                        <img src="./images/India-Flag.webp" width="20px"><span> You Are Shopping On
+                            Amazon.in</span>
+                    </div>
+                </div>
+                <a href="#" class="mx-3 language-select-text"> Change country / region</a>
             </div>
-        </nav>
-
-        <div class="nav-options">
-            <div class="all-logo">
-                <i class="fa-solid fa-bars"></i>
-                <p class="list">All</p>
+        </div>
+        </div>
+        <div class="account-section">
+            <div class="accounts-lists ">
+                <p>Hello,sign in</p>
+                <h2>Accounts&lists <img src="./assets/dropdown_icon.png" alt="" width="8px"></h2>
             </div>
-
-            <div class="options">
-                <p>Today's Deals</p>
-                <p>Customer Service</p>
-                <p>Registry</p>
-                <p>Gift Cards</p>
-                <p> Sell</p>
+            <!-- hidden account div -->
+            <div class="account-info-container">
+                <div class="container d-flex justify-content-center">
+                    <button class="account-signin-btn my-3 py-1"><a href="#" class="text-black ">Sign in</a></button>
+                </div>
+                <div class="container d-flex justify-content-center ">
+                    <span class="account-info-header-text">New Customer?<a href="#">Start here.</a></span>
+                </div>
+                <hr class="mx-4 ">
+                <div class="row">
+                    <div class="col-5">
+                        <ul class="list-group ">
+                            <li class="list-group-item border-0 py-0 account-info-body-text "><b>Your Lists</b></li>
+                            <li class="list-group-item border-0 py-0"><span
+                                    class="fw-lighter account-info-body-text">Create
+                                    Youre Wish Lists</span>
+                            </li>
+                            <li class="list-group-item border-0 py-0"><span
+                                    class="fw-lighter account-info-body-text">Create
+                                    Youre Wish Lists</span>
+                            </li>
+                            <li class="list-group-item border-0 py-0"><span
+                                    class="fw-lighter account-info-body-text">Create
+                                    Youre Wish Lists</span>
+                            </li>
+                            <li class="list-group-item border-0 py-0"><span
+                                    class="fw-lighter account-info-body-text">Create
+                                    Youre Wish Lists</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class=" col-1 d-flex" style="height: auto;">
+                        <div class="vr"></div>
+                    </div>
+                    <div class="col-5">
+                        <ul class="list-group ">
+                            <li class="list-group-item border-0 py-0 account-info-body-text"><b>Your Acoount</b></li>
+                            <li class="list-group-item border-0 py-0"><span
+                                    class="fw-lighter account-info-body-text">Create
+                                    Your Account</span>
+                            </li>
+                            <li class="list-group-item border-0 py-0"><span
+                                    class="fw-lighter account-info-body-text">Create
+                                    Youre Wish Lists</span>
+                            </li>
+                            <li class="list-group-item border-0 py-0"><span
+                                    class="fw-lighter account-info-body-text">Create
+                                    Youre Wish Lists</span>
+                            </li>
+                            <li class="list-group-item border-0 py-0"><span
+                                    class="fw-lighter account-info-body-text">Create
+                                    Youre Wish Lists</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accounts-lists ">
+            <p>Returns</p>
+            <h2>& orders</h2>
+        </div>
+        <div class="cart-section">
+            <div class="nav-cart ">
+                <i class="fa-solid fa-cart-shopping border-0"></i>
+                <p class="border-0">cart</p>
             </div>
         </div>
     </header>
+    <div class="navbar-seconde ">
+        <div class="text-white mx-3 navbar-bottom-style ">
+            <ul class="d-flex overflow-x-scroll py-2 list-unstyled" style="scrollbar-width: none">
+                <li class=" hover-border">
+                    <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample">
+                        <i class="fa-solid fa-bars" style="color: #ffffff; border:none"></i>&nbsp;&nbsp;All
+                    </a>
+                </li>
+                <li class=" hover-border">
+                    <a href="#">Amazon miniTV</a>
+                </li>
+                <li class=" hover-border">
+                    <a href="#">sell</a>
+                </li>
+                <li class=" hover-border">
+                    <a href="#">Mobiles</a>
+                </li>
+                <li class=" hover-border">
+                    <a href="#">Prime</a>
+                </li>
+                <li class=" hover-border">
+                    <a href="#">Customer Service</a>
+                </li>
+                <li class=" hover-border">
+                    <a href="#">Electronics</a>
+                </li>
+                <li class=" hover-border">
+                    <a href="#">Home & Kitchen</a>
+                </li>
+                <li class=" hover-border">
+                    <a href="#">Amazon pay</a>
+                </li>
+                <li class=" hover-border">
+                    <a href="#">Fashion</a>
+                </li>
+                <li class=" hover-border">
+                    <a href="#">computers</a>
+                </li>
+                <li class=" hover-border">
+                    <a href="#">Books</a>
+                </li>
+                <li class=" hover-border">
+                    <a href="#">Toys & Games</a>
+                </li>
+                <li class=" hover-border">
+                    <a href="#">Best Seller</a>
+                </li>
+                <li class=" hover-border">
+                    <a href="#">Home Improvement</a>
+                </li>
+                <li class=" hover-border">
+                    <a href="#">Car & Motorbike</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- hidden div -->
 
 
+    <div id="body-fooyter">
+        <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsum suscipit rem dolores
+            necessitatibus! Deleniti suscipit tempore earum eveniet consequatur magnam repellendus voluptate. Doloribus
+            beatae velit enim incidunt est, magni voluptate quam voluptatum culpa reiciendis harum ipsum nesciunt ipsa
+            molestias! Possimus fuga deleniti, illo quae nesciunt dolorem. Qui enim fuga quasi. Iusto, labore
+            voluptatum. Enim ipsa eos soluta corrupti minus voluptates autem animi deserunt. Reprehenderit, nostrum
+            rerum? Accusantium voluptatibus iure velit deserunt nemo a minus consequuntur odio eum ullam modi ut fugit
+            illum necessitatibus magnam assumenda, dolores aspernatur labore eligendi? Sapiente animi magni eligendi
+            harum, mollitia maiores modi eaque velit ut quas soluta neque officiis quaerat, sunt labore excepturi vero
+            ad esse incidunt reiciendis, nesciunt inventore quisquam deserunt. Obcaecati iusto rerum excepturi qui a
+            harum quis ex id iste temporibus illum incidunt, delectus similique. Consectetur quaerat, a saepe ullam
+            magni architecto consequatur doloremque fuga quas voluptate, ipsa enim sapiente laborum illum temporibus
+            adipisci. Corrupti facilis maiores culpa id assumenda cumque commodi tempora error. A id ipsa eveniet
+            consequuntur fuga provident doloremque officiis, eum totam quibusdam nemo nulla at porro quisquam
+            perspiciatis laborum quaerat facere saepe ratione, deleniti voluptate quod, vitae recusandae! Reiciendis
+            quae commodi quod mollitia quis dolores iure nesciunt voluptatibus, nisi qui necessitatibus eum nostrum
+            autem labore. Accusamus accusantium odit deleniti facilis aut labore molestias maiores mollitia obcaecati,
+            quo ab ipsum fugiat? Accusamus, sunt nam itaque aspernatur fuga perferendis enim amet tempore suscipit
+            adipisci dolor quisquam earum optio eum perspiciatis sint ipsum ratione. Quasi odit illo, numquam magni
+            repudiandae corrupti illum aperiam provident sint! Facilis saepe dicta, inventore cumque reprehenderit porro
+            architecto illum nihil dolor beatae fugiat consequatur veniam vitae unde distinctio obcaecati quo
+            repellendus quae molestiae voluptate praesentium sit omnis iure! Totam odit tempora quod suscipit. Dolor,
+            rem quidem illum natus sint eos possimus sit accusamus repellat quae temporibus? Animi dicta quis et,
+            asperiores quod non at fuga nobis nemo aliquid. Totam repudiandae explicabo placeat? Eligendi dolorum
+            magnam, quibusdam porro error officia ab deserunt atque alias obcaecati iure facilis modi unde odit,
+            blanditiis vitae necessitatibus voluptatem aspernatur? Itaque ducimus cupiditate veniam vero libero,
+            doloremque labore fugit in assumenda suscipit a et incidunt adipisci aliquid, eius nesciunt facere debitis.
+            Ducimus possimus a mollitia. Adipisci similique tempora earum unde, porro optio quo. Minus, debitis
+            repudiandae! Non ducimus fugiat repudiandae hic nisi doloremque nesciunt temporibus laboriosam repellendus
+            minima, debitis pariatur praesentium in natus assumenda nihil vitae. Rem nihil veniam harum! Qui quod eum
+            itaque praesentium, cumque molestias provident consectetur, vel mollitia nesciunt omnis dolor hic doloribus
+            porro ducimus magnam soluta autem quos laudantium ab maiores perferendis ipsum? Praesentium, cupiditate eos
+            possimus dignissimos aut voluptates id qui dolore optio aliquam distinctio. Tenetur odit perspiciatis quod
+            quis ullam vel, at nihil atque nemo odio fuga recusandae facilis debitis consectetur. Laborum quae veritatis
+            pariatur natus cum dolore temporibus iure, ut eos quasi porro, expedita nobis ratione ipsam possimus quidem
+            ab hic quisquam dolorum numquam! Nemo eaque illo vel exercitationem doloribus voluptas. Impedit quod numquam
+            blanditiis in expedita totam magnam atque officia error sequi, animi, laborum sit? Eum expedita sed, amet
+            vel in rem vitae! In iure dolorum delectus consequuntur deleniti, fuga, facere quo quos fugiat illum vel
+            quas autem animi. Ipsa, eos minima assumenda deserunt error in distinctio. Nemo alias quis earum sunt
+            obcaecati sit dolorum accusamus veritatis eveniet laudantium corrupti, aut, fugit maiores voluptatibus
+            perferendis, minima aspernatur magnam vero adipisci? Totam a aut nostrum error at, sequi dicta iusto ullam
+            dolores cupiditate animi numquam accusantium atque quo asperiores, quia odit dolor amet iste impedit
+            aliquid! Fugiat ad commodi nam officiis eveniet explicabo quia ullam autem hic fuga iste, consequatur
+            aliquam cupiditate magnam atque possimus, soluta, laboriosam eaque incidunt asperiores nobis nulla. Vitae
+            tempore sed quo vero vel, sit mollitia consectetur voluptatem numquam repellendus nobis sequi delectus
+            placeat, quasi illo ex! Nam, ex. Aliquam asperiores culpa voluptate, perferendis ducimus sed quas nemo rem
+            dolor magnam maxime incidunt eveniet, earum veniam quasi mollitia laboriosam at amet veritatis, tempora
+            voluptas? Ducimus placeat, ratione, eius tempora accusamus et sed, praesentium debitis quis ullam laboriosam
+            commodi saepe impedit amet cumque consequuntur accusantium unde voluptatem! Fugiat architecto consequuntur
+            distinctio, voluptatem ipsum, odio numquam, aliquid enim voluptatum explicabo inventore! Similique
+            consectetur iure tempore, consequatur facere sit, sed cupiditate ex quod nisi debitis, odit illum neque
+            doloremque dolores laboriosam voluptatem natus ab sint reiciendis rerum reprehenderit nesciunt vel
+            doloribus. Mollitia nulla culpa, ad numquam iusto dicta omnis atque amet incidunt tempora natus quam ex
+            veritatis iure, odio possimus voluptas dolores suscipit repellat necessitatibus? Necessitatibus odit at
+            exercitationem praesentium, voluptate architecto quos recusandae, veniam sapiente laboriosam culpa beatae
+            pariatur nemo dignissimos ratione consequatur ipsa accusantium? Mollitia quae exercitationem ad sint aut
+            voluptatem, repellat asperiores voluptatibus, cumque necessitatibus minus modi maiores sed, eius nisi
+            quaerat? Voluptatibus explicabo eius cupiditate modi, tempore cum quod odit, expedita vel mollitia tempora
+            blanditiis nemo culpa veritatis ducimus voluptatem enim ea eveniet obcaecati sapiente libero dignissimos
+            nobis commodi. Porro aliquam, eius incidunt exercitationem, odio numquam et ex repudiandae laborum doloribus
+            voluptatem dolor ullam laboriosam. Porro voluptatum facere sapiente, non debitis facilis architecto, aperiam
+            placeat perspiciatis enim vitae in impedit, ex fuga dolor modi quaerat atque at expedita eos aliquid nam
+            accusantium assumenda. Harum fuga aliquid, enim molestiae itaque ab ullam impedit minima quisquam atque,
+            iste id neque repellendus sint necessitatibus in voluptatum officia quas deleniti labore! Ipsam mollitia
+            veritatis optio possimus totam cumque expedita itaque eveniet, culpa tempora quaerat ea vel, qui sint ab rem
+            excepturi laudantium est! Deleniti perferendis iure fugiat alias autem culpa ex, minus porro id laudantium
+            nemo maiores eveniet sit cum iusto distinctio exercitationem odit voluptate sequi? Temporibus iste, omnis a
+            praesentium sint, voluptatum non quisquam ipsa et nulla quod blanditiis consequuntur sunt voluptas dolorem
+            labore possimus doloremque eos porro tenetur sed eius rerum. Maxime laudantium id aspernatur? Odit, quaerat
+            veniam aperiam laborum, harum quam natus provident eos ipsum doloribus amet maiores velit ratione eligendi,
+            nesciunt eum id? Id esse voluptatibus possimus doloremque quibusdam in aperiam adipisci! Quas culpa maxime
+            animi molestias minima dolores corporis repudiandae accusamus cumque, nisi quasi alias unde dignissimos
+            corrupti.
+        </h1>
+    </div>
 
 
 
