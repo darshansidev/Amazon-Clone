@@ -10,10 +10,15 @@ body {
     margin: 0;
 }
 
+/* --------global border---------- */
+/* .hover-border { */
+/* border:1px solid white; */
+
+/* } */
 
 /* ---------------------------sild-bar --------------------------*/
 .offcanvas {
-    width: clamp(30%, 1vh, 40%) !important;
+    width: 20%;
 }
 
 .slidbar-head {
@@ -48,6 +53,8 @@ header {
     padding: 10px 20px;
     height: 60px;
     color: aliceblue;
+    position: fixed;
+    width: 100%;
 }
 
 /* ---------------------------navbar--------------------------*/
@@ -157,6 +164,7 @@ header {
 .language-select-container {
     position: absolute;
     top: 100%;
+    cursor: pointer;
     height: auto;
     color: #0F1111 !important;
     width: 250px;
@@ -166,20 +174,25 @@ header {
     visibility: hidden;
     transition: 0.5s;
     transform: translateY(200px);
+    box-shadow: 0 5px 1000px rgba(0, 0, 0, 0.8)
 }
 
 .nav-lang:hover {
     border: 1px solid #ffffff;
     padding: 0.3rem !important;
+
 }
 
 .nav-lang:hover .language-select-container {
     opacity: 1 !important;
     visibility: visible !important;
     transform: translateY(0px);
+
 }
 
-
+.nav-lang:hover #body-fooyter {
+    backdrop-filter: blur(10px) !important;
+}
 
 .language-select-option {
     padding: 0 20px;
@@ -228,7 +241,7 @@ header {
     visibility: hidden;
     transition: 0.5s;
     transform: translateY(200px);
-
+    box-shadow: 0 5px 1000px rgba(0, 0, 0, 0.8)
 }
 
 .account-signin-btn {
@@ -286,4 +299,31 @@ header {
 .cart-section :hover {
     border: 1px solid #ffffff;
     padding: 0.2rem !important;
+}
+
+/* ----------------------------seconde -navbar ------------------- */
+.navbar-seconde {
+    width: 100%;
+    background-color: #232f3e;
+    height: auto;
+    padding-top: 60px !important;
+}
+
+.navbar-bottom-style li {
+    padding: 0 15px;
+    margin-right: auto;
+}
+
+.navbar-bottom-style a {
+    color: white;
+    text-decoration: none;
+    border: none;
+    font-size: clamp(8px, 2vw, 16px);
+    white-space: nowrap;
+
+}
+
+.navbar-bottom-style li :hover {
+    border: 1px solid white;
+    padding: 0.5rem;
 }
