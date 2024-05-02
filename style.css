@@ -261,7 +261,8 @@ header {
     visibility: hidden;
     transition: 0.5s;
     transform: translateY(200px);
-    box-shadow: 0 5px 1000px rgba(0, 0, 0, 0.8)
+    box-shadow: 0 5px 1000px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
 }
 
 .account-signin-btn {
@@ -291,6 +292,8 @@ header {
     opacity: 1 !important;
     visibility: visible !important;
     transform: translateY(0px);
+    transform: translateX(100px);
+
 }
 
 /* -----------------------cart --------------------- */
@@ -362,7 +365,6 @@ header {
 
 .carousel-item img {
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-    z-index: 3;
 }
 
 .carousel-control-prev:active {
@@ -386,11 +388,166 @@ header {
     padding: 8px !important;
     margin-bottom: 10px;
     /* margin-top: -220px; */
-    z-index: 12;
+
     /* background-color: black !important; */
 }
 
 .card-inline-content {
     padding: 10px !important;
     background-color: #ffffff !important;
+}
+
+/* -----------slider ---------------- */
+/* .image-slider {
+    display: flex;
+
+
+} */
+
+/* #owl-demo .item {
+    background: #42bdc2;
+    padding: 30px 0px;
+    margin: 5px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    display: block;
+} */
+/* ---------footer---------------- */
+.footer-account-btn {
+    background-color: #ffc400;
+}
+
+.footer-account-btn:hover {
+    background-color: #fad764;
+}
+
+.footer-account-link {
+    font-size: clamp(6px, 2vw, 12px);
+    font-weight: 200;
+}
+
+.footer-account-link a {
+    text-decoration: none;
+    color: #007185
+}
+
+.footer-account-link a:hover {
+    text-decoration: none;
+    color: #C7511F
+}
+
+.back-to-top-div {
+    background-color: #37475A;
+    font-size: clamp(10px, 2vw, 13px) !important;
+    font-weight: 500;
+    padding: 1rem 0;
+}
+
+.footer-middle-option-div {
+    background-color: #232F3E;
+    width: 100%;
+}
+
+.footer-container {
+    padding: 30px 190px;
+}
+
+.footer-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+    cursor: pointer;
+    border-bottom: 1px solid white !important;
+    padding: 40px 0;
+}
+
+.footer-headline {
+    color: #DDD;
+    margin-bottom: 0.5rem;
+    font-size: clamp(12px, 2vw, 20px) !important;
+    font-weight: 8 00;
+    white-space: nowrap;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+
+.footer-list li a {
+    font-size: clamp(8px, 2vw, 13px) !important;
+    text-decoration: none;
+    color: #DDD;
+    line-height: 1.7em;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+.footer-list li a:hover {
+    text-decoration: underline;
+}
+
+.footer-select-item {
+    align-items: center !important;
+
+}
+
+.footer-select-items a {
+    text-decoration: none;
+    font-size: clamp(10px, 2vw, 12px) !important;
+}
+
+.sele {
+    background-color: transparent;
+    color: #DDD;
+
+    height: 35px;
+    cursor: pointer;
+    font-weight: 300 !important;
+    font-size: clamp(6px, 2vw, 13px);
+    border: none;
+}
+
+.sele option {
+    color: black;
+
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232F3E;
+    cursor: pointer;
+    flex-wrap: nowrap;
+}
+
+.select-op select {
+    background: transparent;
+    color: #cccccc;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 6px 18px 6px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.footer-bottom-area a {
+    text-decoration: none;
+    color: white;
+    font-size: clamp(6px, 2vw, 12px);
+    font-weight: 800;
+}
+
+.footer-bottom-area .span-x {
+    color: white;
+    font-size: clamp(6px, 2vw, 12px);
+    font-weight: 100;
 }
