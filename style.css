@@ -38,7 +38,7 @@ body {
 .pc-view {
     background-color: #131921;
     color: white;
-    display: none;
+    display: flex;
 }
 
 .nav-font {
@@ -50,7 +50,7 @@ body {
 
 .main-navbar-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between !important;
     width: 100%;
 }
 
@@ -66,18 +66,12 @@ body {
 
 .nav-search {
     display: flex;
-    height: 40px;
-    width: 620px;
-    background-color: rgb(247, 247, 247);
-    border: none;
-    border-radius: 5px;
-
 }
 
 .nav-hero-search {
     display: flex;
-    width: 40%;
-    padding: 20px 0;
+    width: 30%;
+
 }
 
 .search-select {
@@ -91,7 +85,6 @@ body {
 
 .search-input {
     width: 100%;
-
 }
 
 .nav-search-logo {
@@ -121,7 +114,44 @@ body {
 .mobile-view {
     background-color: #131921;
     color: white;
-    display: flex;
+    display: none;
     align-items: center;
     padding: 10px;
+}
+
+.nav-hero-search {
+    width: 100%;
+    padding: 0 !important;
+    min-height: 40px;
+}
+
+.search-input {
+    border-radius: 5px 0 0 5px;
+}
+
+.nav-hero-optionbar ul {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 50px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.nav-hero-optionbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 30px !important;
+
+}
+
+.nav-hero-bottom {
+    background-color: #37475A;
+    display: flex;
+    justify-items: center;
+    color: white;
+    padding-left: 1%;
 }
