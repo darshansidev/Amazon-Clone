@@ -539,15 +539,26 @@ header {
     margin: 0;
 }
 
+.footer-bottom-area {
+    background-color: #131A22
+}
+
 .footer-bottom-area a {
     text-decoration: none;
     color: white;
     font-size: clamp(6px, 2vw, 12px);
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .footer-bottom-area .span-x {
     color: white;
     font-size: clamp(6px, 2vw, 12px);
     font-weight: 100;
+    opacity: 0.6;
+}
+
+.footer-ext-txt,
+.footer-ext-txt a {
+    font-size: clamp(6px, 2vw, 12px) !important;
+    font-weight: 100 !important;
 }
