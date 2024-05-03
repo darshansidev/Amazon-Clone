@@ -9,7 +9,18 @@
 @media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+
+    .pc-navbar-ui,
+    .navbar-seconde {
+        display: none;
+    }
+
+    .mobile-navbar-ui,
+    .mobile-navbar-bottom {
+        display: flex;
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -26,7 +37,7 @@
 @media screen and (min-width: 992px) and (min-width: 1200px) {}
 
 /* asdiifjiasodkl */
-@media (max-width:830px) {
+/* @media (max-width:830px) {
     .nav-search {
         display: none;
     }
@@ -126,4 +137,4 @@
     .nav-cart p {
         font-size: 0.7rem;
     }
-}
+} */
