@@ -420,7 +420,6 @@ body {
 
 /* ------------------------carousales----------------------- */
 
-
 .carousel-control-prev {
     line-height: 1.2rem;
 
@@ -445,7 +444,10 @@ body {
 
 /* ----------------------grid images -------------------------- */
 
-.grid-image-container {}
+.grid-image-container {
+    margin-top: -20%;
+    position: relative;
+}
 
 .grid-img-text {
     font-size: smaller;
@@ -460,6 +462,16 @@ body {
 .card-inline-content {
     padding: 10px !important;
     background-color: #ffffff !important;
+}
+
+.grid-card-link {
+    text-decoration: none;
+    color: #419faf;
+}
+
+.grid-card-link:hover {
+    color: red;
+    text-decoration: underline;
 }
 
 /* -----------slider ---------------- */
