@@ -66,6 +66,10 @@ body {
 }
 
 
+.pc-canvas-view {
+    display: flex;
+}
+
 
 
 /* -----------------------location--------------------------- */
@@ -182,8 +186,7 @@ body {
     align-items: center;
     position: relative;
     margin-left: 10px;
-    padding: 0.5rem;
-
+    min-width: 9%;
 }
 
 .language-select-container {
@@ -199,7 +202,6 @@ body {
     visibility: hidden;
     transition: 0.5s;
     transform: translateY(200px);
-    box-shadow: 0 5px 1000px rgba(0, 0, 0, 0.8);
     z-index: 12;
 }
 
@@ -207,7 +209,7 @@ body {
     opacity: 1 !important;
     visibility: visible !important;
     transform: translateY(0px);
-
+    transform: translateX(-100px);
 }
 
 .span-en {
@@ -408,6 +410,10 @@ body {
     background-color: #232f3e;
 }
 
+.nav-mob-header a {
+    text-decoration: none;
+}
+
 .navbar-bottom-style li {
     margin-right: auto;
 }
@@ -568,6 +574,11 @@ body {
     font-size: clamp(10px, 2vw, 13px) !important;
     font-weight: 500;
     padding: 1rem 0;
+}
+
+.back-to-top-link {
+    text-decoration: none !important;
+
 }
 
 .footer-middle-option-div {
