@@ -538,8 +538,11 @@ body {
 
 .owl-nav span {
     position: absolute;
-    border: 1px solid black;
+    background-color: white !important;
+    border-radius: 5px;
 }
+
+
 
 .owl-nav span:hover {
     color: black !important;
