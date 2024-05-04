@@ -11,9 +11,16 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./mediaQuery.css">
     <script src="./script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- carousel cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -643,8 +650,26 @@
                     </div>
                 </div>
             </div>
+            <!-- Image -->
+            <div class="middle-slider">
+                <div class="row">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item"><img src="./images/shoes.jpg" alt="img-1" class="image-item img-fluid"></div>
+                        <div class="item"><img src="./images/cleaning accessories.jpg" alt="img-2" class="image-item">
+                        </div>
+                        <div class="item"><img src="./images/clothes.jpg" alt="img-3" class="image-item"></div>
+                        <div class="item"><img src="./images/cover.jpg" alt="img-4" class="image-item"></div>
+                        <div class="item"><img src="./images/Cushion covers.jpg" alt="img-5" class="image-item"></div>
+                        <div class="item"><img src="./images/cleaning supplies.jpg" alt="img-6" class="image-item">
+                        </div>
+                        <div class="item"><img src="./images/Figurines.jpg" alt="img-7" class="image-item"></div>
+                        <div class="item"><img src="./images/fashion jwellery.jpg" alt="img-8" class="image-item"></div>
+                        <div class="item"><img src="./images/machine.jpg" alt="img-9" class="image-item"></div>
+                        <div class="item"><img src="./images/shoes.jpg" alt="img-10" class="image-item"></div>
 
-
+                    </div>
+                </div>
+            </div>
 
         </div>
         <!-- end of middle container -->
@@ -899,7 +924,38 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
+    <!-- carousel link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1000: {
+                    items: 5,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
+    </script>
 
 </body>
+
 
 </html>
