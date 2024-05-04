@@ -180,10 +180,10 @@ body {
 .nav-lang {
     display: flex;
     align-items: center;
-    justify-content: center;
     position: relative;
     margin-left: 10px;
     padding: 0.5rem;
+
 }
 
 .language-select-container {
@@ -210,6 +210,9 @@ body {
 
 }
 
+.span-en {
+    font-size: clamp(10px, 2vw, 14px);
+}
 
 .language-select-option {
     padding: 0 20px;
@@ -475,12 +478,67 @@ body {
 }
 
 /* -----------slider ---------------- */
-.image-item {
-    height: 190px;
+.middle-slider {
+    background-color: white;
+
 }
 
+.slider-container {
 
-    
+    height: 380px !important;
+}
+
+.slider-head p {
+    font-size: clamp(13px, 2vw, 18px);
+}
+
+.slider-head a {
+    font-size: clamp(8px, 2vw, 14px);
+    text-decoration: none;
+    color: #419faf;
+}
+
+.slider-head a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.image-item {
+    height: 190px;
+
+}
+
+.item-content-area {
+    text-overflow: ellipsis !important;
+    margin-top: 10px !important;
+    overflow: hidden;
+}
+
+.slider-img-txt {
+    font-size: clamp(7px, 2vw, 12px);
+    text-wrap: nowrap;
+    text-overflow: ellipsis !important;
+
+}
+
+.owl-nav {
+    font-size: clamp(70px, 2vw, 100px) !important;
+    margin: -200px 0 0 0 !important;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 0 0;
+
+}
+
+.owl-nav span {
+    position: absolute;
+    border: 1px solid black;
+}
+
+.owl-nav span:hover {
+    color: black !important;
+}
+
 /* ---------footer---------------- */
 .footer-account-btn {
     background-color: #ffc400;
@@ -535,8 +593,9 @@ body {
     color: #DDD;
     margin-bottom: 0.5rem;
     font-size: clamp(12px, 2vw, 20px) !important;
-    font-weight: 8 00;
+    font-weight: 800;
     white-space: nowrap;
+    padding-left: 20px;
 }
 
 .footer-list {
@@ -553,6 +612,8 @@ body {
     line-height: 1.7em;
     font-weight: 300;
     white-space: nowrap;
+    padding-left: 20px;
+
 }
 
 .footer-list li a:hover {
@@ -612,19 +673,19 @@ body {
 .footer-bottom-area a {
     text-decoration: none;
     color: white;
-    font-size: clamp(6px, 2vw, 12px);
+    font-size: clamp(10px, 2vw, 12px);
     font-weight: 700;
 }
 
 .footer-bottom-area .span-x {
     color: white;
-    font-size: clamp(6px, 2vw, 12px);
+    font-size: clamp(10px, 2vw, 12px);
     font-weight: 100;
     opacity: 0.6;
 }
 
 .footer-ext-txt,
 .footer-ext-txt a {
-    font-size: clamp(6px, 2vw, 12px) !important;
+    font-size: clamp(10px, 2vw, 12px) !important;
     font-weight: 100 !important;
 }
