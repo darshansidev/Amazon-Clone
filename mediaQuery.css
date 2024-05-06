@@ -1,13 +1,56 @@
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 410px) {
+    .footer-container {
+        padding: 30px 15px;
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+    }
+}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {}
+@media only screen and (min-width: 410px) and (max-width: 768px) {
+    .footer-container {
+        padding: 30px 130px;
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 768px) and (max-width: 992px) {}
+    }
+}
 
-@media only screen and (min-width: 993px) and (min-width: 1200px) {}
+@media only screen and (max-width: 768px) {
+
+    .pc-navbar-ui,
+    .navbar-seconde {
+        display: none;
+    }
+
+    .mobile-navbar-ui,
+    .mobile-navbar-bottom {
+        display: flex;
+    }
+
+    .pc-canvas-view {
+        display: none;
+    }
+
+    .mob-canvas-view {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 830px) {
+    .nav-logo img {
+        width: clamp(70px, 1vw, 90px);
+    }
+
+    .span-en {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .hidden-div {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1010px) {
+    .owl-nav {
+        display: flex !important;
+    }
+}

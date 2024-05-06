@@ -1,5 +1,6 @@
 # Amazon-Clone
 
---Amazon Clone For Design Purpose
+--Amazon Clone With fully responsive
+
 
 
